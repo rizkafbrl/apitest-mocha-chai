@@ -41,7 +41,9 @@ describe('endpoint reqres in', () => {
         // Verify the response is an object
         expect(res.body).to.be.an('object');
         console.log(res.body);
+        // verify assertion id is 2
         expect(res.body.data.id).to.equal(2);
+
     
         done();
       });
